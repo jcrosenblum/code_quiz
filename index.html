@@ -9,8 +9,42 @@
 </head>
 <body>
     <header>
-        <h1 
+        <h1>CODE QUIZ</h1>
     </header>
+
+    <nav>
+        <a id='highScores'>High Scores</a>
+        <div id='timer' class='hidden'></div>
+    </nav>
+
+    <main>
+        <section id='qBox'>
+
+            <!-- Landing page -->
+            <div id='mainPage'>
+                <h2>Ready to take the coding quiz?</h2>
+                <p>Choose the correct answer for each question. Wrong answers will take five seconds off the timer. Good luck!</p>
+                <button type='button' id='startButton'>START QUIZ</button>
+            </div>
+            <div id='qAndA' class='hidden'>
+                <h2 class='questions'></h2>
+                <nav class='answers'></nav>
+            </div>
+            <div id='resultsPage' class='hidden'>
+                <h2>Great Job!</h2>
+                <p>You answered <span id='finalScore'></span> questions correctly.</p>
+                <form class='resultsForm'>
+                    <h4 id='nameBox'>Enter your name here:
+                        <input type='text' id='nameInput'>
+                    </h4>
+                    <button type='button' id='nameSubmit'>Submit your score!</button>
+                </form>
+            </div>
+        </section>
+        <section id='resultsPage' class='hidden'>
+            <div id='topScores'></div>
+        </section>
+    </main>
 
     <script src='assets/js/script.js'></script>
 </body>
