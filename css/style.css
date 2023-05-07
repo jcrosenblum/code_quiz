@@ -1,0 +1,15 @@
+#main-header {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+#highscores {
+    display: flex;
+    justify-content: flex-start
+    
+}
+
+#top-timer {
+    
+}
