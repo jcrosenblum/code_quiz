@@ -1,10 +1,13 @@
 var topTimer = document.querySelector('#top-timer');
+var header = document.querySelector('#header');
 var mainHeader = document.querySelector('#main-header');
 var startBtn = document.querySelector('#start-button');
 var quizMain = document.querySelector('#quiz-main');
-var question
+var quizQ = document.querySelector('#quiz-question')
+var question;
 var seconds = 90;
 var timeLeft;
+var currentQ = 0
 
 startBtn.addEventListener('click', function() {
     header.classList.add('hidden');
@@ -20,7 +23,7 @@ function runClock() {
         if (timeLeft === 0) {
             endQuiz();
         }
-    }, 500);
+    }, 1000);
 }
 
 function showQuestions() {
@@ -29,5 +32,7 @@ function showQuestions() {
     if (currentQ === questions.length) {
         endQuiz();
     }
-    quizQ.innerText = thisQ.ask
+    quizQ.innerText = thisQ;
+
 }
+
